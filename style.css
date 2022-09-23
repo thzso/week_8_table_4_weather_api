@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #3a4e6e;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("background/cloud.jpg");
+}
+
+#root {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  background: rgba(225, 234, 235, 0.55);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1.5em;
+}
+
+h1 {
+  padding: 0.5em 0em 0.5em 0em;
+  font-weight: bolder;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+#date {
+  font-size: 1.2em;
+}
+
+#forecast {
+    height: 0.7em;
+    width: 0.7em;
+    
+}
+
+#city {
+  margin: 0.5em 0em 1em 0em;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.3em 0em 0.3em 0em;
+  color: #3a4e6e;
+  border-color: #3a4e6e;
+  border-radius: 0.5em;
+}
+
+#currentCity {
+  width: 8em;
+}
+
+#city-weather-info {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#weather-info {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#gif-container {
+  background-image: url(gif/default.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #3a4e6e;
+  border-radius: 1.5em;
+  width: 60vw;
+  height: 60vw;
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 400px) {
+  #root {
+    width: 360px;
+    height: 90%;
+  }
+
+  #gif-container {
+    width: 220px;
+    height: 220px;
+    margin-top: 1em;
+  }
+
+  #city-weather-info {
+    justify-content: center;
+  }
+
+  #weather-info {
+    font-size: 2em;
+  }
+
+  #currentCity {
+    width: 10em;
+  }
+}
